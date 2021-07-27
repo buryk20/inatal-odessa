@@ -1,6 +1,5 @@
 .banner-main {
   min-height: 450px;
-  background-image: url("../src/assets/bunMainInstaOdessa.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -55,5 +54,50 @@
 }
 
 .line {
-    
+  max-width: 1440px;
+  width: 100%;
+  margin-bottom: 40px;
+  border-bottom: $border-grey;
+  @extend %pos-cent-marg;
+}
+
+.terms-action-wrp {
+  max-width: 1440px;
+  width: 100%;
+  padding-bottom: 73px;
+  @extend %pos-cent-marg;
+  @include main-text;
+  text-align: left;
+}
+
+.terms-action-wrp > h3 {
+  max-width: 414px;
+  width: 100%;
+  padding-top: 139px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.terms-action-wrp > p {
+  max-width: 721px;
+  width: 100%;
+  text-indent: 1.5em;
+  font-size: 16px;
+}
+
+.terms-action-wrp > button {
+  @include btn-inp-form;
+  margin-left: 0;
+}
+
+.terms-action-back {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #7fffd4;
+}
+
+.terms-action-text {
+  margin-bottom: 38px;
 }
