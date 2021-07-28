@@ -68,6 +68,8 @@
   @extend %pos-cent-marg;
   @include main-text;
   text-align: left;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 
 .terms-action-wrp > h3 {
@@ -91,7 +93,12 @@
   margin-left: 0;
 }
 
+.terms-action-wrp > button:hover {
+  background-color: $colorMainHov;
+}
+
 .terms-action-back {
+  margin-bottom: 40px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -100,4 +107,122 @@
 
 .terms-action-text {
   margin-bottom: 38px;
+}
+
+.terms-action-text-wrp {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  @include main-text;
+}
+
+.terms-action-text-wrp > h4 {
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 36px;
+}
+
+.mech-act-inst-odessa {
+  margin-bottom: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mech-act-money {
+  display: flex;
+  border: 1px solid $colorMain;
+  border-radius: 8px;
+}
+
+.mech-act-money > p,
+.mech-act-inst > p {
+  max-width: 328px;
+  padding-left: 36px;
+  display: flex; 
+  align-items: center;
+  line-height: 24px;
+  font-size: 24px;
+  font-weight: 500;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.mech-act-inst {
+  display: flex;
+  border: 1px solid $colorMain;
+  border-radius: 8px;
+}
+
+.product-wrp {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  @include main-text;
+  font-size: 18px;
+}
+
+.attention-text {
+  text-transform: uppercase;
+}
+
+.product-gallery {
+  padding-top: 40px;
+  margin-bottom: 40px;
+}
+
+.free-instal-wrp {
+  max-width: 1440px;
+  width: 100%;
+  @extend %pos-cent-marg;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.list-sale {
+  margin-bottom: 30px;
+}
+
+.sali-list-wrp {
+  max-width: 1440px;
+  width: 100%;
+  padding-bottom: 73px;
+  margin-bottom: 40px;
+  @extend %pos-cent-marg;
+  @include main-text;
+  text-align: left;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.sali-list-wrp > h3 {
+  padding-top: 123px;
+  margin-bottom: 35px;
+  font-size: 20px;
+}
+
+.sali-list-wrp > ul {
+  max-width: 649px;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.sali-list-wrp > button {
+  @include btn-inp-form;
+  margin-left: 0;
+}
+
+.sali-list-wrp > button:hover {
+  background-color: $colorMainHov;
+}
+
+.text-sale-ras {
+  max-width: 938px;
+  margin-bottom: 70px;
+  @extend %pos-cent-marg;
+  @include main-text;
+  font-size: 18px;
+}
+
+.slogon {
+  @extend %pos-cent-marg;
 }
