@@ -2,7 +2,7 @@
   <div id="app">
     <main>
       <article>
-        <section class="banner-main" style="background-image:url('src/assets/bunMainInstaOdessa.jpg');">
+        <section class="banner-main" style="background-image:url('../src/assets/bunMainInstaOdessa.jpg');">
           <div class="text-ban-wrp">
             <div class="text-ban-back">
               <h1>Змонтуємо вас безоплатно!</h1>
@@ -10,11 +10,21 @@
             </div>
           </div>  
         </section>
+        <!-- <section class="banner-main-mob" style="background-image:url('../src/assets/bunMainInstaOdessaMob.jpg');">
+          <div class="text-ban-wrp">
+            <div class="text-ban-back">
+              <h1>Змонтуємо вас безоплатно!</h1>
+              <h2>для Одеси та передмістя!</h2>
+            </div>
+          </div>  
+        </section> -->
       </article>
       <article class="text-bot-ban-wrp">
           <p class="__text-main-inst">А Вы знали, что 80% случаев выхода из строя оборудования систем видеонаблюдения происходят по причине некачественного монтажа?</p>
       </article>
-      <div class="line"></div>
+      <article class="line-wrp">
+        <div class="line"></div>
+      </article>
       <article>
         <div class="terms-action-back" style="background-image:url('src/assets/termsOfActiomBack.png');">
           <div class="terms-action-wrp">
@@ -23,7 +33,20 @@
             </p>
             <p class="terms-action-text">Акция «Бесплатная установка» – отличный вариант для жителей города Одессы получить эффективную систему видеонаблюдения при минимальных затратах на подключение оборудования!
             </p>
-            <button>В каталог</button>
+            <a href="#product"><button>В каталог</button>
+            </a>
+          </div>
+        </div>
+        <!--мобилная версия-->
+        <div class="terms-action-back-mob" style="background-image:url('../src/assets/linearMobInstOdessa.png');">
+          <div class="terms-action-wrp">
+            <h3>АКЦИЯ ОТ GREENVISION: БЕСПЛАТНАЯ УСТАНОВКА СИСТЕМ ВИДЕОНАБЛЮДЕНИЯ</h3>
+            <p>    Вы можете самостоятельно установить оборудование или воспользоваться услугами профессиональных монтажников. В первом случае – Вы потратите массу времени и сил, чтобы грамотно все подключить. Во втором – приготовьтесь выложить за работу специалистов 100-120$.
+            </p>
+            <p class="terms-action-text">Акция «Бесплатная установка» – отличный вариант для жителей города Одессы получить эффективную систему видеонаблюдения при минимальных затратах на подключение оборудования!
+            </p>
+            <a href="#product"><button>В каталог</button>
+            </a>
           </div>
         </div>
         <div class="terms-action-text-wrp">
@@ -43,7 +66,7 @@
         <section class="product-wrp">
           <p class="attention-text">Внимание!</p>
           <p>Действие акции распространяется только на объекты, расположенные в пределах города Одесса.</p>
-          <article class="product-gallery">
+          <article id="product" class="product-gallery">
             <!-- Тут должны быть товары которые будут копированы из основных категорий -->
           </article>
         </section>
@@ -59,7 +82,8 @@
                 <li>•	максимальная высота монтажа камеры не выше 5 метров;</li>
                 <li>•	рекомендации по эксплуатации системы видеонаблюдения.</li>
               </ul>
-              <button>В каталог</button>
+              <a href="#product"><button>В каталог</button>
+              </a>
             </div>
             <p class="text-sale-ras">
               Расходные материалы и дополнительное оборудование, которое необходимо для IP системы (коммутационные коробки, сетевой коммутатор, жёсткий диск, сетевой фильтр, видеорегистратор и т.д.) оплачиваются отдельно. Схема расположения камер не составляется.

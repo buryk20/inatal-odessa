@@ -11,12 +11,13 @@
 .text-ban-back > h1 {
   max-width: 678px;
   margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
   color: $colorMain;
   font-size: 72px;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: -0.04em;
-  @extend %pos-cent-marg;
 }
 
 .text-ban-back > h2 {
@@ -88,12 +89,12 @@
   font-size: 16px;
 }
 
-.terms-action-wrp > button {
+.terms-action-wrp > a > button {
   @include btn-inp-form;
   margin-left: 0;
 }
 
-.terms-action-wrp > button:hover {
+.terms-action-wrp > a > button:hover {
   background-color: $colorMainHov;
 }
 
@@ -102,7 +103,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-color: #7fffd4;
 }
 
 .terms-action-text {
@@ -206,12 +206,12 @@
   font-size: 18px;
 }
 
-.sali-list-wrp > button {
+.sali-list-wrp > a > button {
   @include btn-inp-form;
   margin-left: 0;
 }
 
-.sali-list-wrp > button:hover {
+.sali-list-wrp > a > button:hover {
   background-color: $colorMainHov;
 }
 
@@ -225,4 +225,93 @@
 
 .slogon {
   @extend %pos-cent-marg;
+}
+
+.terms-action-back-mob {
+  display: none;
+}
+
+.banner-main-mob {
+  display: none;
+}
+
+@media (max-width: 1455px) {
+  .line-wrp {
+    padding: 0 16px;
+  }
+  .mech-act-inst-odessa{
+    padding: 0 16px;
+  }
+  .terms-action-wrp {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .sali-list-wrp {
+    padding-left: 16px;
+  }
+}
+
+@media (max-width: 1343px) {
+  .mech-act-inst-odessa{
+    flex-direction: column;
+    align-items: center;
+  }
+  .mech-act-inst-odessa > img {
+    padding-top: 15px;
+    margin-bottom: 15px;
+    transform: rotate(90deg);
+    max-width: 56px;
+  }
+  .mech-act-money {
+    margin-bottom: 15px;
+    max-width: 639px;
+    width: 100%;
+  }
+  .mech-act-inst {
+    max-width: 639px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1155px) {
+  .text-ban-back {
+    padding-left: 16px;
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+    background-color: #fff0;
+  }
+  .text-ban-back > h2 {
+    display: none;
+  }
+  .text-ban-back > h1 {
+    max-width: 345px;
+    margin-bottom: 76px;
+    padding: 20px;
+    margin-left: 0;
+    color: #fff;
+    background-color: #00000080;
+    font-size: 30px;
+    letter-spacing: 0;
+    text-align: left;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 995px) {
+  .terms-action-back-mob {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .terms-action-back {
+    display: none;
+  }
+  // .banner-main {
+  //   display: none;
+  // }
+  // .banner-main-mob {
+  //   display: block;
+  //   background-repeat: no-repeat;
+  // }
 }
