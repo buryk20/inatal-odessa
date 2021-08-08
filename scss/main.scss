@@ -138,7 +138,7 @@
 .mech-act-inst > p {
   max-width: 328px;
   padding-left: 36px;
-  display: flex; 
+  display: flex;
   align-items: center;
   line-height: 24px;
   font-size: 24px;
@@ -239,7 +239,7 @@
   .line-wrp {
     padding: 0 16px;
   }
-  .mech-act-inst-odessa{
+  .mech-act-inst-odessa {
     padding: 0 16px;
   }
   .terms-action-wrp {
@@ -252,7 +252,7 @@
 }
 
 @media (max-width: 1343px) {
-  .mech-act-inst-odessa{
+  .mech-act-inst-odessa {
     flex-direction: column;
     align-items: center;
   }
@@ -262,24 +262,41 @@
     transform: rotate(90deg);
     max-width: 56px;
   }
-  .mech-act-money {
+  .mech-act-money,
+  .mech-act-inst {
     margin-bottom: 15px;
     max-width: 639px;
     width: 100%;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
   }
   .mech-act-inst {
     max-width: 639px;
     width: 100%;
+  }
+  .mech-act-money > p,
+  .mech-act-inst > p {
+    padding-bottom: 29px;
+    text-align: center;
+  }
+  .mech-act-money > img,
+  .mech-act-inst > img {
+    margin-bottom: 19px;
   }
 }
 
 @media (max-width: 1155px) {
   .text-ban-back {
     padding-left: 16px;
+    padding-right: 16px;
     margin-left: 0;
     display: flex;
     align-items: center;
     background-color: #fff0;
+  }
+  .text-ban-back > h1 {
+    margin-left: auto;
   }
   .text-ban-back > h2 {
     display: none;
@@ -296,16 +313,26 @@
     text-align: left;
     font-weight: 500;
   }
-}
 
-@media (max-width: 995px) {
-  .terms-action-back-mob {
-    display: block;
-    background-repeat: no-repeat;
-    background-size: cover;
+  @media (max-width: 995px) {
+    .terms-action-back-mob {
+      display: block;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .terms-action-back {
+      display: none;
+    }
+    .banner-main {
+      background-position: right;
+    }
   }
-  .terms-action-back {
-    display: none;
+  .terms-action-wrp > a > button {
+    margin-left: auto;
+  }
+  .terms-action-wrp > h3 {
+    padding-top: 24px;
+    text-align: center;
   }
   // .banner-main {
   //   display: none;
@@ -314,4 +341,10 @@
   //   display: block;
   //   background-repeat: no-repeat;
   // }
+}
+
+@media (max-width: 525px) {
+  .banner-main {
+    background-position-x: -1129px;
+  }
 }
