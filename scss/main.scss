@@ -1,3 +1,4 @@
+@import url('https://fonts.google.com/share?selection.family=Montserrat');
 .banner-main {
   min-height: 450px;
   background-repeat: no-repeat;
@@ -8,32 +9,32 @@
   text-align: center;
 }
 
-.text-ban-back > h1 {
-  max-width: 678px;
-  margin-bottom: 16px;
-  margin-left: auto;
-  margin-right: auto;
-  color: $colorMain;
-  font-size: 72px;
-  text-transform: uppercase;
-  font-weight: 700;
-  letter-spacing: -0.04em;
-}
-
-.text-ban-back > h2 {
-  max-width: 405px;
-  font-size: 58px;
-  color: $colorTextOrders;
-  font-weight: 400;
-  @extend %pos-cent-marg;
-}
-
 .text-ban-back {
   min-height: 422px;
   max-width: 843px;
   background-color: #fff;
   border-bottom-left-radius: 439px;
   border-bottom-right-radius: 439px;
+  h1{
+    max-width: 678px;
+    margin-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    color: $colorMain;
+    font-size: 72px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    font-family: 'Montserrat';
+  }
+  h2 {
+    max-width: 405px;
+    font-size: 58px;
+    color: $colorTextOrders;
+    font-weight: 400;
+    @extend %pos-cent-marg;
+  }
+  
 }
 
 .text-ban-wrp {
@@ -182,37 +183,68 @@
   margin-bottom: 30px;
 }
 
+.wrp-sali-text {
+  position: absolute;
+  bottom: 144px;
+  left: 0;
+  padding-left: 16px;
+
+}
+
+// .sali-text-pos {
+//   max-width: 1440px;
+//   width: 100%;
+//   position: relative;
+// }
+
 .sali-list-wrp {
   max-width: 1440px;
   width: 100%;
   padding-bottom: 73px;
   margin-bottom: 40px;
+  position: relative;
   @extend %pos-cent-marg;
   @include main-text;
   text-align: left;
   background-repeat: no-repeat;
   background-position: right;
+  
+  h3 {
+    padding-top: 123px;
+    margin-bottom: 35px;
+    font-size: 20px;
+  }
+  ul {
+    max-width: 649px;
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  img {
+    position: relative;
+    margin-left: auto;
+  }
+  a {
+    button {
+      @include btn-inp-form;
+      margin-left: 0;
+      &:hover {
+        background-color: $colorMainHov;
+      }
+    }
+  }
 }
 
-.sali-list-wrp > h3 {
-  padding-top: 123px;
-  margin-bottom: 35px;
-  font-size: 20px;
+.expendable-materials-wrp {
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
-.sali-list-wrp > ul {
-  max-width: 649px;
-  margin-bottom: 30px;
-  font-size: 18px;
+.sali-img {
+  margin-left: auto;
 }
 
-.sali-list-wrp > a > button {
-  @include btn-inp-form;
-  margin-left: 0;
-}
-
-.sali-list-wrp > a > button:hover {
-  background-color: $colorMainHov;
+.sali-wpr {
+  position: relative;
 }
 
 .text-sale-ras {
@@ -235,6 +267,24 @@
   display: none;
 }
 
+.motto-wrp {
+  width: 100%;
+  max-width: 544px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Montserrat';
+  color: $colorMain;
+  font-size: 46px;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  p{
+    span {
+      font-size: 2.2em;
+    }
+  }
+}
+
 @media (max-width: 1455px) {
   .line-wrp {
     padding: 0 16px;
@@ -248,16 +298,21 @@
   }
   .sali-list-wrp {
     padding-left: 16px;
+    padding-right: 16px;
   }
 }
 
 @media (max-width: 1343px) {
+  .mech-act-inst > p,
+  .mech-act-money > p {
+    padding-left: 0;
+  }
   .mech-act-inst-odessa {
     flex-direction: column;
     align-items: center;
   }
   .mech-act-inst-odessa > img {
-    padding-top: 15px;
+    // padding-top: 15px;
     margin-bottom: 15px;
     transform: rotate(90deg);
     max-width: 56px;
@@ -287,6 +342,20 @@
 }
 
 @media (max-width: 1155px) {
+  .text-sale-ras {
+    margin-bottom: 20px;
+  }
+  .wrp-sali-text {
+    padding-left: 0;
+  }
+  .sali-wpr {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .wrp-sali-text {
+    position: relative;
+    bottom: 0;
+  }
   .text-ban-back {
     padding-left: 16px;
     padding-right: 16px;
@@ -303,7 +372,7 @@
   }
   .text-ban-back > h1 {
     max-width: 345px;
-    margin-bottom: 76px;
+    margin-bottom: 36px;
     padding: 20px;
     margin-left: 0;
     color: #fff;
@@ -313,6 +382,34 @@
     text-align: left;
     font-weight: 500;
   }
+  .terms-action-wrp > p {
+    text-align: center;
+    text-indent: none;
+  }
+  .sali-wpr {
+    margin-bottom: 20px;
+  }
+  .sali-list-wrp {
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    background: none;
+    h3 {
+      padding-top: 0;
+      text-align: center;
+    }
+    ul {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    a {
+      button{
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+
+}  
 
   @media (max-width: 995px) {
     .terms-action-back-mob {
@@ -326,25 +423,57 @@
     .banner-main {
       background-position: right;
     }
-  }
-  .terms-action-wrp > a > button {
-    margin-left: auto;
-  }
-  .terms-action-wrp > h3 {
-    padding-top: 24px;
-    text-align: center;
-  }
-  // .banner-main {
-  //   display: none;
-  // }
-  // .banner-main-mob {
-  //   display: block;
-  //   background-repeat: no-repeat;
-  // }
+    .terms-action-wrp > a > button {
+      margin-left: auto;
+    }
+    .terms-action-wrp > h3 {
+      padding-top: 24px;
+      text-align: center;
+    }
+    .terms-action-wrp {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .line {
+      display: none;
+    }
+    .text-bot-ban-wrp {
+      padding-top: 18px;
+      margin-bottom: 18px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .terms-action-wrp {
+      padding-bottom: 23px;
+    }
+    .terms-action-text-wrp > h4 {
+      padding-top: 20px;
+      margin-bottom: 20px;
+      font-size: 20px;
+    }
+    .mech-act-money > p,
+    .mech-act-inst > p {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+    .mech-act-inst-odessa {
+      margin-bottom: 20px;
+      padding: 0 16px;
+    }
+    .product-wrp {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
 }
 
 @media (max-width: 525px) {
   .banner-main {
     background-position-x: -1129px;
+  }
+  .motto-wrp {
+    p {
+      font-size: 28px;
+    }
   }
 }
